@@ -6,9 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    <include-->
+<!--        android:id="@+id/toolbarMain"-->
+<!--        layout="@layout/toolbar"/>-->
     <include
-        android:id="@+id/toolbarMain"
-        layout="@layout/toolbar"/>
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar_for_non_home_activity" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_main"
@@ -20,7 +24,7 @@
         android:src="@drawable/ic_add_black_24dp"
         />
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/toolbarMain"
+        android:layout_below="@+id/include"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
